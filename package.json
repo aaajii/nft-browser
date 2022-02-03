@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "@project-serum/anchor": "^0.18.0",
-    "@solana/web3.js": "^1.30.2",
+    "@solana/web3.js": "^1.32.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "base-58": "0.0.1",
+    "base58-native": "^0.1.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
