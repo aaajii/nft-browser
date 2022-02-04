@@ -208,18 +208,11 @@ const getNFTs = async (updateAuthority) => {
     }
   )
 
-  debugger
-
+  // Metadatas to Tokens will sometimes return: net::ERR_INSUFFICIENT_RESOURCES
   const tokens = await metadatasToTokens(rawMetadatas)
-  debugger
   const nfts = await tokensToEnrichedNFTs(tokens)
-
-  debugger
-
   const validNFTs = filterOutIncompleteNFTs(nfts)
-
   const finalNFTs = processRarity(validNFTs)
-  debugger
   console.log(finalNFTs)
 }
 
